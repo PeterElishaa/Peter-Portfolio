@@ -1,0 +1,33 @@
+<!-- <section class="cards" id="service">
+  <h2 class="title">Services</h2>
+  <div class="content">
+    <div class="card" *ngFor="let service of services">
+      <a [href]="'mailto:' + service.email + '?subject=' + service.title + ' Inquiry'">
+        <div class="icon"><img [src]="service.icon"></div>
+        
+        <div class="info">
+          <h3>{{ service.title }}</h3>
+          <p>{{ service.description }}</p>
+        </div>
+          </a>
+      </div>
+    </div>
+  </section> -->
+
+  <section class="cards" id="service">
+    <h2 class="title">Services</h2>
+    <div class="content">
+      <div class="card" *ngFor="let service of services">
+        <a [href]="'mailto:' + service.email + '?subject=' + service.title + ' Inquiry'">
+          <div class="icon">
+            <img [src]="service.icon" alt="{{ service.title }}" class="card-image">
+          </div>
+          <div class="info">
+            <h3>{{ service.title }}</h3>
+            <p>{{ service.description }}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  
